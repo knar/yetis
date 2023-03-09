@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            html,
+            body,
+            canvas {
+                margin: 0;
+                padding: 0;
+                display: block;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: max-content 250px;
+            }
+
+            #adjustments {
+                font: 13px monospace;
+                color: white;
+                background-color: #1a1b26;
+                padding: 10px;
+            }
+
+            input {
+                font: 13px monospace;
+                max-width: 60px;
+            }
+
+            input[type='checkbox'],
+            input[type='color'] {
+                width: 16px;
+                height: 16px;
+            }
+
+            input[type='color'] {
+                padding: 0;
+                border: 0;
+            }
+
+            h4 {
+                margin: 8px 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <canvas id="canvas"></canvas>
+            <div id="adjustments"></div>
+        </div>
+
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
